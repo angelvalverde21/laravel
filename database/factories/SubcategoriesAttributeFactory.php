@@ -2,17 +2,17 @@
 
 namespace Database\Factories;
 
-use App\Models\SubcategorieAttribute;
+use App\Models\SubcategoriesAttribute;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class SubcategorieAttributeFactory extends Factory
+class SubcategoriesAttributeFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = SubcategorieAttribute::class;
+    protected $model = SubcategoriesAttribute::class;
 
     /**
      * Define the model's default state.

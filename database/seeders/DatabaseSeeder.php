@@ -52,7 +52,7 @@ class DatabaseSeeder extends Seeder
 
 
         $this->call(NameAttributeSeeder::class);
-        $this->call(SubcategorieAttributeSeeder::class);
+        $this->call(SubcategoriesAttributeSeeder::class);
 
 
     }

@@ -25,8 +25,13 @@ class Subcategory extends Model
 
 
     public function attributes(){
-        return $this->hasMany(SubcategorieAttribute::class); 
+        return $this->hasMany(SubcategoriesAttribute::class); 
     }
 
+    /**** */
+
+    public function subcategoriesAttribute(){
+        return $this->hasMany(subcategoriesAttribute::class);
+    }
 
 }

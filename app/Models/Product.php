@@ -33,8 +33,6 @@ class Product extends Model
 
     //RELACION UNO A MUCHOS POLIMORFICA
 
-    public function subcategorieAttribute(){
-        return $this->hasMany(subcategorieAttribute::class);
-    }
+
 
 }

@@ -2,10 +2,10 @@
 
 namespace Database\Seeders;
 
-use App\Models\SubcategorieAttribute;
+use App\Models\SubcategoriesAttribute;
 use Illuminate\Database\Seeder;
 
-class SubcategorieAttributeSeeder extends Seeder
+class SubcategoriesAttributeSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,7 +14,7 @@ class SubcategorieAttributeSeeder extends Seeder
      */
     public function run()
     {
-        $subcategorieAttributes = [
+        $subcategoriesAttributes = [
 
             [
                 'subcategory_id' => '18',
@@ -59,14 +59,14 @@ class SubcategorieAttributeSeeder extends Seeder
         ];
 
 
-        foreach($subcategorieAttributes as $subcategorieAttribute){
+        foreach($subcategoriesAttributes as $subcategoriesAttribute){
 
             //La siguiente linea de codigo: Category::factory(1)->create($category)
             //devuelve el registro en formato de coleccion asi se un registro lo devuelve
             //como coleccion asi que si se requiere usarlo en una variable como 1 se
             //necesita pasar el metodo first();
 
-            SubcategorieAttribute::factory(1)->create($subcategorieAttribute);
+            SubcategoriesAttribute::factory(1)->create($subcategoriesAttribute);
 
 
         }

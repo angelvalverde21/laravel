@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Product;
-use App\Models\SubcategorieAttribute;
+use App\Models\SubcategoriesAttribute;
 
 
 class ProductController extends Controller
@@ -60,12 +60,13 @@ class ProductController extends Controller
     {
         //
         
-        $nameAttribute = SubcategorieAttribute::all();
+        $nameAttribute = SubcategoriesAttribute::all();
 
 
+        //
         //$subcategorieAttribute = SubcategorieAttribute::with(['nameAttributes'])->get();
         
-        $producto = Product::with(['subcategory','subcategory.attributes','fotos'])->find($id);
+        $producto = Product::with(['subcategory','subcategory.subcategoriesAttribute.nameAttributes','subcategory.subcategoriesAttribute.sizegroups','fotos'])->find($id);
 
         return response( $producto,200);
     }

@@ -8,4 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class nameAttribute extends Model
 {
     use HasFactory;
+
+    
+
 }
